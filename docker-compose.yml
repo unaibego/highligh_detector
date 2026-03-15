@@ -2,4 +2,4 @@ services:
   app:
     build: . #construye la imagen a partir del Dockerfile en el directorio actual
     ports:
-      - "8000:800"
+      - "8000:8000"
