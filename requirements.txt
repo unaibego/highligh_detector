@@ -1,0 +1,4 @@
+inaSpeechSegmenter
+uvicorn
+fastapi
+python-multipart
