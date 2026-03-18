@@ -2,3 +2,5 @@ inaSpeechSegmenter
 uvicorn
 fastapi
 python-multipart
+python-telegram-bot
+pydantic-settings

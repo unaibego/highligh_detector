@@ -1,4 +1,4 @@
-from python:3.10-slim
+from python:3.9-slim
 
 WORKDIR /app
 
@@ -11,6 +11,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 copy src/ ./src/
 copy api/ ./api/
+copy secretos/ ./secretos/
+copy .env ./.env
 
 
-CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]
+
+CMD ["python", "-m", "src.telegram_main"]

@@ -1,5 +1,7 @@
 services:
   app:
     build: . #construye la imagen a partir del Dockerfile en el directorio actual
-    ports:
-      - "8000:8000"
+    # ports:
+    #   - "8000:8000"
+    env_file:
+      - .env

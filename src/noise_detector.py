@@ -63,6 +63,8 @@ def procesar_video(video_path) -> str:
     segment_string = get_string_from_segments(cleaned_segments)
     return segment_string
 
+
+
 if __name__ == "__main__":
     segments = detect_video_parts(video_path)
     music_segments = get_music_segments(segments)

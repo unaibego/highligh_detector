@@ -12,10 +12,18 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Telegram Bot",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "src.telegram_main",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Fast API",
             "type": "debugpy",
             "request": "launch",
-            "module": "src.main",
+            "module": "src.api_main",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
         }
